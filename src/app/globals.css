@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 10%; /* Dark blue-gray */
+    --foreground: 210 30% 95%; /* Light gray */
+
+    --card: 220 25% 15%; /* Slightly lighter dark blue-gray for cards */
+    --card-foreground: 210 30% 95%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 30% 95%;
+
+    --primary: 210 90% 55%; /* Bright blue */
+    --primary-foreground: 210 30% 98%; /* White/very light gray for text on primary */
+
+    --secondary: 220 15% 25%; /* Muted darker blue-gray */
+    --secondary-foreground: 210 30% 90%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 210 20% 65%;
+
+    --accent: 200 80% 60%; /* Lighter blue for accents if needed */
+    --accent-foreground: 220 25% 10%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 30%; /* Subtle borders */
+    --input: 220 20% 25%;
+    --ring: 210 90% 60%; /* Ring color, often same as primary */
+
+    --chart-1: 210 80% 50%;
+    --chart-2: 170 70% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 70% 60%;
+    --chart-5: 340 75% 55%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.font-headline {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-code {
+  font-family: var(--font-source-code-pro), monospace;
+}
